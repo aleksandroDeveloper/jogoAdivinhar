@@ -69,9 +69,9 @@ public class JogoAdivinharTela extends javax.swing.JFrame {
     private void btnAdvinharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdvinharActionPerformed
         int resp = Integer.parseInt(txtAdvinhar.getValue().toString());
         float genio = (float)Math.random();
-        float gen = 1 + genio * (5-1);
+        float gen = 1 + genio * (6-1);
         int gen2 = (int) gen;
-        String frase  = (resp == gen2)?"Acertou":String.format("<html>Você errou eu pensei no número <strong>%d</strong></html>", gen2);
+        String frase  = (resp == gen2)?"Acertou!!!":String.format("<html>Você errou eu pensei no número <strong>%d</strong></html>", gen2);
         lblResposta.setText(frase);
     }//GEN-LAST:event_btnAdvinharActionPerformed
 
